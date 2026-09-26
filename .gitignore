@@ -1,0 +1,77 @@
+# ==============================================================
+# Cisco Packet Tracer — practice lab repository
+# ==============================================================
+# NOTE: .pkt and .pksz files are INTENTIONALLY tracked. They are
+# binary and merge poorly, but they are the whole point of this
+# repo. Do not add them here.
+
+# ---------- OS / desktop junk ----------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---------- Editors & IDEs ----------
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ---------- Packet Tracer scratch files ----------
+# ~$* is the lock file Packet Tracer creates while a topology is open
+~$*
+*.pkt.bak
+*.bak
+*.tmp
+*.autosave
+*.log
+.packet-tracer/
+
+# ---------- Cisco IOS / IOU images ----------
+# Multi-GB, Cisco-licensed, not redistributable — re-import in PT instead
+ios-images/
+*.bin
+*.iso
+*.image
+
+# ---------- Raw packet captures ----------
+# Regenerate from the .pkt any time.
+# Remove the next three lines if you'd rather commit captures.
+*.pcap
+*.pcapng
+*.cap
+
+# ---------- Python (automation scripts) ----------
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# ---------- Secrets ----------
+# Device credentials belong in .env, never in committed code
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+id_rsa*
+
+# ---------- Local scratch ----------
+scratch/
